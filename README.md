@@ -74,3 +74,8 @@ python test_selection/data_by_IFD.py \
 ```--sample_rate```: How many cherry samples you would like to select? You can also use ```--sample_number``` to set the exact number of samples. 
 
 6. Train Cherry Model
+
+|         **Dataset**                 | **Power Consumed** | **Experiment Time** |
+|--------------------------|:-----------:|:-------:|
+| **Alpaca_2k**      |       |   | 
+| **Alpaca_20k**     | |    | 
