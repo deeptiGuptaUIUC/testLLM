@@ -29,7 +29,7 @@ python3 test_selection/data_analysis.py \
 ```--mod```: ```pre``` used for getting needed embeddings or scores on selecting pre-experienced samples 
 
 ```
-python test_selection/data_by_cluster.py \
+python3 test_selection/data_by_cluster.py \
     --pt_data_path alpaca_data_pre.pt \
     --json_data_path data/code_alpaca_2k.json \
     --json_save_path alpaca_data_pre.json \
@@ -52,7 +52,7 @@ python test_selection/data_by_cluster.py \
 4. Select Cherry Data
 
 ```
-python test_selection/data_analysis.py \
+python3 test_selection/data_analysis.py \
     --data_path data/code_alpaca_2k.json \
     --save_path alpaca_data_cherry.pt \
     --model_name_or_path microsoft/Phi-3-mini-4k-instruct \
@@ -62,7 +62,7 @@ python test_selection/data_analysis.py \
 ```
 
 ```
-python test_selection/data_by_IFD.py \
+python3 test_selection/data_by_IFD.py \
     --pt_data_path alpaca_data_cherry.pt \
     --json_data_path data/code_alpaca_2k.json \
     --json_save_path alpaca_data_cherry.json \
@@ -75,7 +75,15 @@ python test_selection/data_by_IFD.py \
 
 6. Train Cherry Model
 
-|         **Dataset**                 | **Power Consumed** | **Experiment Time** |
+Barry's Machine - 
+
+Lenovo Legion Pro 5i laptop has a mobile RTX 4070 from 2023.  It has an Intel Core i9 with 24 cores (32 threads) and 32gb RAM.  Speed is 4.1GHz up to 5.1GHz… it’s complicated.  E-cores and P-cores.
+
+8gb RAM
+0.2 TFLOPS at 64-bit precision
+15.6 TFLOPS at 16-bit precision
+
+|         **Dataset**                 | **Pre Training Time** | **Re-training Time** |
 |--------------------------|:-----------:|:-------:|
-| **Alpaca_2k**      |       |   | 
-| **Alpaca_20k**     | |    | 
+| **Alpaca_2k**      |   47mins    |  1hr 30min | 
+| **Alpaca_20k**     | 8hrs|    | 
